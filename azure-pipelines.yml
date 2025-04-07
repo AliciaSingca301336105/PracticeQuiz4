@@ -18,9 +18,10 @@ steps:
 - task: NuGetToolInstaller@1
 
 - task: UseDotNet@2
+  displayName: 'Install .NET 8 SDK'
   inputs:
-    packageType: 'sdk'
-    version: '8.x.x' # or your target SDK version
+    version: '8.x'
+
 
 - task: NuGetCommand@2
   inputs:
